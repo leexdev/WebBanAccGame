@@ -1,0 +1,102 @@
+Options +FollowSymLinks 
+ServerSignature Off
+RewriteEngine On 
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Lỗi không tồn tại
+ErrorDocument 404 /?widget=404
+ErrorDocument 402 /?widget=404
+ErrorDocument 403 /?widget=404
+ErrorDocument 404 /?widget=404
+ErrorDocument 500 /?widget=404
+Options All -Indexes
+
+RewriteRule ^transaction/callback/$ callback.php [L]
+RewriteRule ^transaction/callback$ callback.php [L]
+RewriteRule ^login-facebook.html$ oauth.php [L]
+
+RewriteRule ^login.html$ ?act=login [L]
+RewriteRule ^forgot.html$ ?act=forgot [L]
+RewriteRule ^logout.html$ logout.php [L]
+RewriteRule ^warning.html$ warning.php [L]
+RewriteRule ^purchase/atm.html$ products/modals/purchase/atm.php [L]
+RewriteRule ^garena/lien-quan.html$ ?act=accounts&type=lien-quan [L]
+RewriteRule ^garena/free-fire.html$ ?act=accounts&type=free-fire [L]
+RewriteRule ^infomation.html$ ?act=info [L]
+RewriteRule ^infomation/password.html$ ?act=info&type=password [L]
+RewriteRule ^infomation/phone.html$ ?act=info&type=phone [L]
+RewriteRule ^infomation/email.html$ ?act=info&type=email [L]
+RewriteRule ^rut-kim-cuong-free-fire.html$ ?act=rut-kc-ff [L]
+
+RewriteRule ^garena/random-lien-quan.html$ ?act=random_lq [L]
+RewriteRule ^garena/random-lien-quan-trung-cap.html$ ?act=random_lq&type=2 [L]
+RewriteRule ^garena/random-lien-quan-cao-cap.html$ ?act=random_lq&type=3 [L]
+RewriteRule ^garena/random-lien-quan-sieu-cap.html$ ?act=random_lq&type=4 [L]
+RewriteRule ^garena/random-lien-quan-vip.html$ ?act=random_lq&type=5 [L]
+RewriteRule ^garena/random-free-fire.html$ ?act=random_lq&type=6 [L]
+RewriteRule ^garena/random-free-fire-vip.html$ ?act=random_lq&type=7 [L]
+RewriteRule ^garena/random-free-fire-sieu-vip.html$ ?act=random_lq&type=8 [L]
+RewriteRule ^garena/random-kim-cuong-ff.html$ ?act=random_lq&type=10 [L]
+RewriteRule ^garena/random-kim-cuong-ff-cao-cap.html$ ?act=random_lq&type=11 [L]
+RewriteRule ^garena/random-free-fire-sieu-vip-2.html$ ?act=random_lq&type=9 [L]
+
+RewriteRule ^accounts/([0-9]*).html$ ?act=view_accounts&id=$1 [L]
+RewriteRule ^history/buy.html$ ?act=history_buy [L]
+RewriteRule ^history/recharge.html$ ?act=history_card [L]
+RewriteRule ^recharge.html$ ?act=recharge [L]
+RewriteRule ^huong-dan-thanh-toan.html$ ?act=atm [L]
+RewriteRule ^huong-dan-bao-mat.html$ products/pages/bao-mat.html [L]
+RewriteRule ^load/history/wheel$ assets/ajax/pages/history_wheel.php [L]
+RewriteRule ^load/history/wheel_public$ assets/ajax/pages/history_wheel_public.php [L]
+
+RewriteRule ^wheel/$ ?act=wheel [L]
+RewriteRule ^wheel$ ?act=wheel [L]
+
+RewriteRule ^wheel/play$ assets/ajax/site/wheel.php [L]
+RewriteRule ^wheel/play/$ assets/ajax/site/wheel.php [L]
+
+#####################################################################################
+#ADMIN
+RewriteRule ^admin/([0-9a-z\-\_]+)$ admin/?widget=$1 [L]
+RewriteRule ^admin/([0-9a-z\-\_]+)/$ admin/?widget=$1 [L]
+RewriteRule ^admin/([0-9a-z\-\_]+)/page/([0-9]*)$ admin/?widget=$1&page=$2 [L]
+RewriteRule ^admin/([0-9a-z\-\_]+)/page/([0-9]*)/$ admin/?widget=$1&page=$2 [L]
+
+#lq
+RewriteRule ^admin/lien-quan/([0-9a-z\-\_]+)$ admin/?widget=lien-quan&patch=$1 [L]
+RewriteRule ^admin/lien-quan/([0-9a-z\-\_]+)/$ admin/?widget=lien-quan&patch=$1 [L]
+RewriteRule ^admin/lien-quan/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)$ admin/?widget=lien-quan&patch=$1&id=$2 [L]
+RewriteRule ^admin/lien-quan/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/$ admin/?widget=lien-quan&patch=$1&id=$2 [L]
+
+#pubg
+RewriteRule ^admin/pubg-mobile/([0-9a-z\-\_]+)$ admin/?widget=pubg-mobile&patch=$1 [L]
+RewriteRule ^admin/pubg-mobile/([0-9a-z\-\_]+)/$ admin/?widget=pubg-mobile&patch=$1 [L]
+RewriteRule ^admin/pubg-mobile/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)$ admin/?widget=pubg-mobile&patch=$1&id=$2 [L]
+RewriteRule ^admin/pubg-mobile/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/$ admin/?widget=pubg-mobile&patch=$1&id=$2 [L]
+
+#free frire
+RewriteRule ^admin/free-fire/([0-9a-z\-\_]+)$ admin/?widget=free-fire&patch=$1 [L]
+RewriteRule ^admin/free-fire/([0-9a-z\-\_]+)/$ admin/?widget=free-fire&patch=$1 [L]
+RewriteRule ^admin/free-fire/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)$ admin/?widget=free-fire&patch=$1&id=$2 [L]
+RewriteRule ^admin/free-fire/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/$ admin/?widget=free-fire&patch=$1&id=$2 [L]
+
+#lq
+RewriteRule ^admin/wheel/([0-9a-z\-\_]+)$ admin/?widget=wheel&patch=$1 [L]
+RewriteRule ^admin/wheel/([0-9a-z\-\_]+)/$ admin/?widget=wheel&patch=$1 [L]
+RewriteRule ^admin/wheel/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)$ admin/?widget=wheel&patch=$1&id=$2 [L]
+RewriteRule ^admin/wheel/([0-9a-z\-\_]+)/([0-9a-z\-\_]+)/$ admin/?widget=wheel&patch=$1&id=$2 [L]
+
+#edit_member
+RewriteRule ^admin/member/([0-9a-z\-\_]+)$ admin/?widget=edit_member&username=$1 [L]
+RewriteRule ^admin/member/([0-9a-z\-\_]+)/$ admin/?widget=edit_member&username=$1 [L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+RewriteCond %{HTTP_HOST} ^shoptruongcyber\.tk$
+RewriteRule ^/?$ "https\:\/\/shoptruongcyber\.tk\/" [R=301,L]
+

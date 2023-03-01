@@ -1,0 +1,388 @@
+.price-vip{
+    text-align:right;
+    padding:2.5px;
+}
+
+.sa-user{
+    position:relative;
+}
+
+.vip-info{
+    background:#fff8c9;
+    width:200px;
+    padding:10px;
+    color:#000000;
+    border-radius:5px;
+    font-weight:500;
+    position:absolute;
+    top:40px;
+    right:5px;
+    z-index:5;
+    display:none;
+}
+
+.vip-info label{
+    color:#f34d2b;
+    font-weight:bold;
+}
+
+.txt-clothes {
+    background: #272727;
+    border: 1px solid #363636;
+    font-size: 13px;
+    color: #898989;
+    padding: 7.5px 12px;
+    border-radius: 4px;
+}
+
+#modal-ads,
+#modal-forget {
+    color: #121212;
+}
+
+.alert-login {
+    text-align: center;
+    color: #b9b9b9;
+}
+
+    .alert-login a {
+        color: #0ce3ac;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+.tab-content img {
+    width: auto !important;
+    height: auto !important;
+}
+/*search*/
+.btn-search {
+    background: url(/Content/images/ic_search.png) center center no-repeat;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    border: none;
+    text-indent: -999999px;
+    position: absolute;
+    top: 28px;
+    right: 215px;
+}
+
+.sa-search {
+    overflow: hidden;
+    clear: both;
+    padding: 22px 0 0 0;
+    display: none;
+}
+
+    .sa-search .box-search {
+        background: #fff;
+        width: 370px;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        float: right;
+        position: relative;
+    }
+
+        .sa-search .box-search input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            padding: 0 87px 0 5px;
+            color: #969696;
+        }
+
+            .sa-search .box-search input::-webkit-input-placeholder {
+                color: #969696;
+            }
+
+            .sa-search .box-search input:-moz-placeholder { /* Firefox 18- */
+                color: #969696;
+            }
+
+            .sa-search .box-search input::-moz-placeholder { /* Firefox 19+ */
+                color: #969696;
+            }
+
+            .sa-search .box-search input:-ms-input-placeholder {
+                color: #969696;
+            }
+
+        .sa-search .box-search button {
+            background: linear-gradient(to top, #B63E1D 0%, #FF502E 100%);
+            background: -moz-linear-gradient(to top, #B63E1D 0%, #FF502E 100%);
+            background: -o-linear-gradient(to top, #B63E1D 0%, #FF502E 100%);
+            background: -ms-linear-gradient(to top, #B63E1D 0%, #FF502E 100%);
+            background: -webkit-linear-gradient(bottom, #B63E1D 0%, #FF502E 100%);
+            width: 86px;
+            height: 40px;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #0f0503;
+            font-weight: bold;
+        }
+/*form pre order*/
+#modal-preorder .modal-content {
+    background: rgba(0, 0, 0, 0.75);
+    max-width: 570px;
+    border: 1px #363636 solid;
+    border-radius: 0;
+}
+
+.input-preorder {
+    max-width: 370px;
+    margin: 0 auto;
+}
+
+.name-acc-preorder {
+    text-align: center;
+    margin: 15px 0 35px 0;
+}
+
+    .name-acc-preorder a {
+        font-size: 24px;
+        display: inline-block;
+        padding: 5px 0;
+        color: #06bd8e;
+    }
+
+        .name-acc-preorder a:before {
+            background: #06bd8e;
+            width: 100px;
+            height: 2px;
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            margin: 0 0 0 -50px;
+            content: "";
+        }
+
+.btn-clode-preorder {
+    background: url(/Content/images/ic_close_modal.png) center center no-repeat;
+    width: 49px;
+    height: 49px;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+.btn-submir-preorder {
+    color: #000000;
+    border: none;
+    background: linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -moz-linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -o-linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -ms-linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -webkit-linear-gradient(bottom, #009b73 0%, #0ce2ab 100%);
+}
+/*detail pre order*/
+.msg-preorder {
+    color: #0ce3ac;
+    clear: both;
+    text-align: right;
+    padding: 10px 0 0 0;
+}
+/*statistics*/
+.sa-statistics {
+    overflow: hidden;
+}
+
+    .sa-statistics p {
+        font-weight: bold;
+    }
+
+        .sa-statistics p span {
+            font-weight: bold;
+            color: #009b73;
+        }
+/*modal*/
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+    .modal:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -4px;
+    }
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+/*filter*/
+.btn-filter {
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -moz-linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -o-linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -ms-linear-gradient(to top, #009b73 0%, #0ce2ab 100%);
+    background: -webkit-linear-gradient(bottom, #009b73 0%, #0ce2ab 100%);
+    position: relative;
+    top: 2px;
+}
+
+.dropdown-mutil {
+    padding: 0 0 0 5px;
+    position: relative;
+}
+
+    .dropdown-mutil i {
+        color: #ff502e;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        cursor: pointer;
+        display: none;
+    }
+
+        .dropdown-mutil i.show-remove {
+            display: block;
+        }
+
+.txt-filter input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: #121212;
+}
+
+    .txt-filter input::-webkit-input-placeholder {
+        color: #121212;
+        font-size: 12px;
+    }
+
+    .txt-filter input:-moz-placeholder { /* Firefox 18- */
+        color: #121212;
+        font-size: 12px;
+    }
+
+    .txt-filter input::-moz-placeholder { /* Firefox 19+ */
+        color: #121212;
+        font-size: 12px;
+    }
+
+    .txt-filter input:-ms-input-placeholder {
+        color: #121212;
+        font-size: 12px;
+    }
+/*acc detail*/
+.l-i-c-acc {
+    margin: 5px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+    .l-i-c-acc li {
+        width: 8.38888%;
+        float: left;
+        margin: 9px;
+        border: 1px #222222 solid;
+   
+    }
+
+        .l-i-c-acc li img {
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .l-i-c-acc li label {
+            background: #000000;
+            height: 13px;
+            padding: 0px;
+            display: block;
+            font-size: 9px;
+        }
+/*facebook chat*/
+#cfacebook {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    z-index: 999999999999999;
+    width: 250px;
+    height: auto;
+    box-shadow: 6px 6px 6px 10px rgba(0,0,0,0.2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+    #cfacebook .fchat {
+        float: left;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        display: none;
+        background-color: #fff;
+    }
+
+        #cfacebook .fchat .fb-page {
+            float: left;
+        }
+
+    #cfacebook a.chat_fb {
+        background: #3a5795 url(/Content/images/ic_arrow_up_white.png) 225px 15px no-repeat;
+        float: left;
+        width: 250px;
+        height: 40px;
+        color: #fff;
+        text-decoration: none;
+        line-height: 40px;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+        border: 0;
+        border-bottom: 1px solid #133783;
+        z-index: 9999999;
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+        #cfacebook a.chat_fb img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        #cfacebook a.chat_fb:hover {
+            color: yellow;
+            text-decoration: none;
+        }
+
+@media (max-width: 992px) {
+    .btn-search {
+        top: 20px;
+    }
+}
+
+@media (max-width: 373px) {
+    .btn-search {
+        right: 155px;
+    }
+
+    .sa-search .box-search {
+        width: 100%;
+    }
+}

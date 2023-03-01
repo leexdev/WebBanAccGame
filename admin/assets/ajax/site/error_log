@@ -1,0 +1,26 @@
+[15-Aug-2020 14:11:14 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: accounts in /home/nickfftk/datlight.org/assets/ajax/site/latthe.php on line 12
+[15-Aug-2020 14:11:16 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: accounts in /home/nickfftk/datlight.org/assets/ajax/site/latthe.php on line 12
+[15-Aug-2020 14:11:18 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: accounts in /home/nickfftk/datlight.org/assets/ajax/site/latthe.php on line 12
+[15-Aug-2020 17:28:28 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id in /home/nickfftk/datlight.org/assets/ajax/site/latthe.php on line 67
+[15-Aug-2020 19:29:15 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id in /home/nickfftk/datlight.org/assets/ajax/site/latthe.php on line 67
+[16-Aug-2020 20:54:12 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: id in /home/nickfftk/datlight.org/assets/ajax/site/latthe.php on line 67
+[07-Oct-2020 16:07:39 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected 'apikey' (T_STRING) in /home/datlight/demo03.thuecodeweb.net/assets/ajax/site/config.php on line 4
+[20-Dec-2020 10:49:12 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[21-Dec-2020 21:07:38 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[25-Dec-2020 22:47:13 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[25-Dec-2020 22:53:06 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[25-Dec-2020 22:53:12 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[25-Dec-2020 22:53:21 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[25-Dec-2020 22:53:29 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[25-Dec-2020 22:53:36 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[11-Jan-2021 21:50:23 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[23-Jan-2021 16:03:24 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[23-Jan-2021 16:03:38 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[23-Jan-2021 21:52:15 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[08-Feb-2021 15:36:21 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[08-Feb-2021 15:37:38 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[13-Feb-2021 08:33:59 Asia/Ho_Chi_Minh] PHP Notice:  Trying to get property of non-object in /home/naptienf/vongquaysieupham2020.com/assets/ajax/site/card.php on line 109
+[18-Aug-2021 19:23:27 Asia/Ho_Chi_Minh] PHP Fatal error:  Uncaught Error: Call to a member function connect_db() on null in /home/tbansubcom/uy.bansub.com/assets/ajax/site/card.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/tbansubcom/uy.bansub.com/assets/ajax/site/card.php on line 109
